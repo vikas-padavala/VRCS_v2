@@ -1,0 +1,22 @@
+this project is to create a live menu application that displays the menu items of a
+small eatery
+
+the website should display the avaliability of menu items like if the item is properly avaliable
+or it is almost getting completed, the general public should simply see the status not the exact count
+for example if the item produce on that day is 100 unites then the item should be displayed as avaliable
+till the first 80 unites when the avaliable unites is down to 20 or less than 20 then it should be displayed
+as "getting out of stock soon"
+
+general public should be able to checkout the menu and the menu should get update automatically
+the data on the screen should be updated for every few(tbd) seconds
+
+admin users should be able to login, add menu items, set quantity for that day, as mentioned earlear if the stock
+is down to last 20% only then it should be displayed as getting out of stock soon
+
+once the item is completely exausted then it should display as "out of stock"
+
+the admin users should have the ability to remove any menu items when ever they want
+
+the admin user should have the ability to add items into the system, set these already added items on the menu with the quantity
+update prices of the items, update quantity on the menu board
+
