@@ -5,7 +5,7 @@ services:
     image: mysql:8.0
     container_name: live_menu_mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Sakiv__@100% # Replace with a strong password
+      MYSQL_ROOT_PASSWORD: Rick==@100% # Replace with a strong password
       MYSQL_DATABASE: live_menu # Replace with your desired database name
       MYSQL_USER: live_menu_rw # Replace with your desired username
       MYSQL_PASSWORD: LiveMenu@100% # Replace with your desired user password
@@ -14,7 +14,7 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pSakiv__@100%"] #replace with your root password.
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pRick==@100%"] #replace with your root password.
       interval: 10s
       timeout: 5s
       retries: 3
