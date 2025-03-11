@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: live_menu_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Sakiv__@100% # Replace with a strong password
+      MYSQL_DATABASE: live_menu # Replace with your desired database name
+      MYSQL_USER: live_menu_rw # Replace with your desired username
+      MYSQL_PASSWORD: LiveMenu@100% # Replace with your desired user password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pSakiv__@100%"] #replace with your root password.
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+# mysqladmin ping -h 0.0.0.0 -P 3306 -u root -p
+# mysqladmin ping -h 0.0.0.0 -u root -p
+# mysqladmin ping -h localhost -u root -p
+
+volumes:
+  mysql_data:
+
