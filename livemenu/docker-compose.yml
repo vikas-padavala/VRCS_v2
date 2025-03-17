@@ -19,9 +19,8 @@ services:
       timeout: 5s
       retries: 3
 
-# mysqladmin ping -h 0.0.0.0 -P 3306 -u root -p
-# mysqladmin ping -h 0.0.0.0 -u root -p
-# mysqladmin ping -h localhost -u root -p
+# use the below command for connecting to the mysql database from terminal
+# mysql -h 0.0.0.0 -P 3306 -u root -p
 
 volumes:
   mysql_data:
